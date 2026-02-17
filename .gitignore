@@ -1,0 +1,30 @@
+# depenencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment Files
+.env
+.emv.local
+.env.production
+
+# Build Files
+dist/
+build/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database
+*.sqlite
+*.db
+
+# Mobile
+ios/pods/android/app/build
