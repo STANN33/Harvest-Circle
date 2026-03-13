@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgis/postgis:15-3.4
+    container_name: harvest-circle-db
+    environment:
+      POSTGRES_DB: harvestcircle
+      POSTGRES_USER: harvest_admin
+      POSTGRES_PASSWORD: Harvest@2024
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
